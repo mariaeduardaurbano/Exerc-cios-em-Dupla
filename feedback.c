@@ -17,5 +17,12 @@ int main(){
     }
     media = soma / 7;
     printf("A média de notas é: %.2f", media);
+    if (media >= 8) {
+        printf("Avaliação: Boa\n");
+    } else if (media >= 5) {
+        printf("Avaliação: Razoável\n");
+    } else {
+        printf("Avaliação: Ruim\n");
+    }
     return 0;
 }
