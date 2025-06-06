@@ -69,8 +69,8 @@ void cadastroAnimais() {
 void filtroIdade() {
     system("clear");
     for (int i = 0; i < numAnimais; i++) {
-        if (animais[i].idade == 5) {
-            printf("--- Animais com 5 anos de idade ---\n");
+        if (animais[i].idade > 5) {
+            printf("--- Animais acima de 5 anos de idade ---\n");
             printf("Nome: %s\n", animais[i].nome);
             printf("Tipo do Animal: %s\n", animais[i].tipo);
             printf("Idade: %d\n", animais[i].idade);
