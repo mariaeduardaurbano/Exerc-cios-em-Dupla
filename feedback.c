@@ -9,10 +9,10 @@ int main(){
     for(int i = 0; i < 7; i++){
         system("clear");
         do{
-        printf("Caro Cliente, por favor dê uma nota ao nosso estabelecimento(1-7)\n");
+        printf("Caro Cliente, por favor dê uma nota ao nosso estabelecimento(0-10)\n");
         scanf("%f", &nota[i]);
         soma += nota[i];
-        } while(nota[i] < 1 || nota[i] > 7);
+        } while(nota[i] < 0 || nota[i] > 10);
         
     }
     media = soma / 7;
